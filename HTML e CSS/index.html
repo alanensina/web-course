@@ -22,6 +22,8 @@
         <a href wm-nav="exercicios/apresentacao.html">00 - Apresentação</a>|
         <a href wm-nav="exercicios/texto1.html">01 - Tags para texto 1</a>|
         <a href wm-nav="exercicios/texto2.html">02 - Tags para texto 2</a>|
+        <a href wm-nav="exercicios/listas.html">03 - Listas</a>|
+        <a href wm-nav="exercicios/listasAninhadas.html">04 - Listas Aninhadas</a>|
     </nav>
     <section id="conteudo"></section>
     <footer>
@@ -34,10 +36,10 @@
         Assim que ele recebe uma resposta, ele passa esse html para texto e então pega e substitui o HTML pela resposta recebida e substitui na tela.        
         -->
     <script>
-        document.querySelectorAll('[wm-nav]').forEach(link => {
-            const conteudo = document.getElementById("conteudo")
-
-            link.onclick = function (e) {
+       document.querySelectorAll('[wm-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+            
+            link.onclick = function(e) {
                 e.preventDefault()
                 fetch(link.getAttribute('wm-nav'))
                     .then(resp => resp.text())
