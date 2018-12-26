@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios HTML</title>
+    <style>
+        #conteudo {
+            padding: 30px 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Exercícios HTML
+    </header>
+    <nav>
+        <a href wm-nav="exercicios/apresentacao.html">00 - Apresentação</a>|
+        <a href wm-nav="exercicios/texto1.html">01 - Tags para texto 1</a>|
+        <a href wm-nav="exercicios/texto2.html">02 - Tags para texto 2</a>|
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        Curso de Web Moderno</footer>
+
+    <!--
+        * Script de requisição Ajax *
+        Ele pega todas as tags 'wm-nav', faz um laço em cada uma delas pegando cada link da id 'conteudo',
+        Em seguida com o onlick (a cada clique do usuário no link), ele impede a navegação com o preventDefault e faz uma requisição com o fetch através do link dado.
+        Assim que ele recebe uma resposta, ele passa esse html para texto e então pega e substitui o HTML pela resposta recebida e substitui na tela.        
+        -->
+    <script>
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            const conteudo = document.getElementById("conteudo")
+
+            link.onclick = function (e) {
+                e.preventDefault()
+                fetch(link.getAttribute('wm-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+
+</html>
