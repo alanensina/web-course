@@ -1,0 +1,30 @@
+<h1 id="inicio">Links</h1>
+
+<h2>URL absoluta</h2>
+<!-- Não tirar o http em caso de URL absolutas-->
+<a href="http://google.com.br">Google - abrindo na mesma aba</a><br>
+<a href="http://youtube.com" target="_blank">Youtube - abrindo em uma nova aba</a><br><br>
+
+<h2>URL relativa</h2>
+<!-- buscará o arquivo index da pasta atual -->
+<a href="index.html">Voltar 1</a><br>
+<!-- irá para a pasta raiz da aplicação e buscará o arquivo index -->
+<a href="/index.html">Voltar 2</a><br>
+<!-- sai da pasta atual e volta para a pasta anterior e irá buscar o index. Caso tenha mais de uma pasta, deve-se incluir mais ../../index.html até chegar a pasta desejada -->
+<a href="../index.html">Voltar 3</a><br><br>
+
+<h2>Links para email</h2>
+<a href="mailto:alanvinicius.ce@gmail.com">Contato - Alan Ensina</a><br><br>
+
+<!-- Ficará no rodapé da página e será acessado através de um link -->
+<div id="trollado" style="position:absolute;top:2000px">
+    <h1>Não era para clicar meu consagrado!</h1>
+    <p>Você foi trollado!</p>
+    <a href="#inicio">Voltar ao início</a>
+</div>
+
+<!--
+* Navegação via âncora*
+Redireciona para a mesma página porém para o id citado na referência.
+-->
+<a href="#trollado">Não clique aqui!</a>
