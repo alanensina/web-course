@@ -1,0 +1,55 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li>
+        <span wm-folder>backend</span>
+        <ul>
+            <li>
+                <span wm-folder>app</span>
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span wm-folder>frontend</span>
+        <ul>
+            <li>
+                <span wm-folder>public</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<!-- CSS para estilizar a lista aninhada como árvore -->
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<!--
+    *Script em Javascript que ao clicar nas pastas faça expandir ou suprimir*
+    Ele seleciona todos os span com 'wm-folder' e faz um laço, e cada vez que clica em um deles ele pega todos os 'ul' que estão abaixo dele na árvore.
+    Ao pegar cada 'ul' ele guarda em uma constante 'd' seu display, e faz uma operação ternária verificando se está 'block' (visível) ou 'none' (não visível), e a cada clique, ele inverte esses valores entre visível ou não.
+-->
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
+</script>
