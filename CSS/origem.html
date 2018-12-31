@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <title>Origem CSS: Externo, Interno e Inline</title>
     <style>
-        /* ... */
+        body{
+            background-color: aquamarine; /* Como o arquivo CSS está sendo processado depois (linha 12), o arquivo sobreescreverá essa cor */
+        }
     </style>
+    <link rel="stylesheet" href="css/externo.css">
 </head>
 
 <body>
