@@ -1,0 +1,13 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    border: solid 3px red;
+    padding: 50px;
+}
+
+div{
+    /* Herdado de body, pois essa div está dentro de body. */
+    border: inherit; 
+    padding: inherit;
+    font-family: inherit;
+}
