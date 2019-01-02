@@ -1,0 +1,37 @@
+body{
+    font-size: 80px;
+}
+
+.c1{
+    background-color: orange;
+}
+
+.c2{
+    background-color: skyblue;
+}
+
+.c3{
+    background-color: tomato;
+}
+
+div{
+    /* Joga todos os elementos para a esquerda */
+    float: left;
+
+    /* Padding topo */
+    padding-top: 100px;
+
+    /* Ordem do padding: topo, direita, baixo, esquerda */
+    padding: 10px 50px 100px 150px;
+
+    /* Quando há dois valores, a ordem é topo/baixo e direita/esquerda */
+    padding: 100px 50px;
+
+    /* Padding em todos os lados com o mesmo valor */
+    padding: 50px;
+
+    /* Quando há dois valores, a ordem é topo/baixo e direita/esquerda */
+    margin: 0px 20px;
+    
+    border: solid 15px black;
+}

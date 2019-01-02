@@ -1,0 +1,38 @@
+body{
+    font-size: 40px;
+    color: white;
+    background-color: coral;
+}
+
+ul{
+    padding: 0px;
+}
+
+div{
+    background-color: seagreen;
+}
+
+span{
+    background-color: dodgerblue;
+}
+
+li{
+    background-color: purple;
+}
+
+div, span, li{
+    width: 50%;
+    width: 200px;
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+
+    /* Display block deixa um elemento por linha.
+     display: block; */
+
+    /* Display inline os efeitos do elemento ficam em linha sequencial e desconsidera width e height aplicados. 
+    display: inline; */
+
+    /* display inline-block  coloca os elementos na mesma linha blocados e leva em consideração width e height aplicados. */
+     display: inline-block; 
+}
