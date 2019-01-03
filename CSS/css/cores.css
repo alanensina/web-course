@@ -1,0 +1,27 @@
+ /* 
+    Sites para verificar as propriedades das cores:
+
+    https://www.w3schools.com/colors/colors_hsl.asp
+            
+    https://coolors.co/
+    
+    http://paletton.com/
+*/
+
+body{
+    /* background-color: springgreen;
+    background-color: #f67809;
+    background-color: #abc;
+
+    /* Com transparência, #rgb + 2 digitos de transparência 
+    background-color: #edc91280; */
+
+    /* Função rgb + transparência */
+    /* background-color: rgb(55,110,220, 0.5); */
+
+    /* Hue, saturation and lightness: */
+    /* background-color: hsl(299, 50%, 50%); */
+    
+    /* HSL com transparência */
+    background-color: hsl(299, 58%, 50%, 0.5);
+}
