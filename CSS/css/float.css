@@ -1,0 +1,32 @@
+body {
+    background-color: #222;
+}
+
+.c1 {
+    background-color: red;
+    /* Joga o elemento para a direita absoluta. */
+    float: right;
+}
+
+.c2 {
+    background-color: green;
+    /* Limpa o float da direita do elemento anterior */
+    clear: right;
+    float: left;
+}
+
+.c3 {
+    background-color: blue;
+    /* Limpa ambos os floats dos elementos anteriores */
+    clear: both;
+}
+
+.c4 {
+    background-color: orange;
+    float: right;
+}
+
+div{
+    height: 150px;
+    width: 150px;
+}

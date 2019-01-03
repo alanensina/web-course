@@ -1,0 +1,16 @@
+div {
+    font-size: 40px;
+    height: 100px;
+    width: 260px;
+    border: solid 3px;
+
+    /* Esconde tudo o que ultrapassa a borda. 
+    overflow: hidden; */
+
+    /* Aplica um scroll no eixo X e Y para visualizar o conteúdo. */
+    /* overflow: scroll; */
+
+    /* Pode-se aplicar o overflow conforme o eixo desejado. */
+    overflow-x: scroll;
+    overflow-y: hidden;    
+}

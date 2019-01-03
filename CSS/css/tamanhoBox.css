@@ -1,0 +1,18 @@
+/* Seletor universal, ou seja, será aplicado a todos os componentes. */
+* {
+    /* border-box: considera o tamanho total apenas da borda para dentro. Já o content-box considera apenas o conteúdo. */
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 45px;
+    margin: 0;
+}
+
+div{
+    background-color: deepskyblue;
+    width: 100%;
+    height: 300px;
+    padding: 100px;
+    border: solid 20px;    
+}
