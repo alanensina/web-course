@@ -1,0 +1,63 @@
+div {
+    font-size: 60px;
+    padding: 30px;
+    border: solid 5px #222;
+}
+
+.static {
+    top: 100px;
+    left: 100px;
+    background-color: steelblue;
+}
+
+/* Com a position fixed o elemento fica fixado na tela e não se movimenta nem quando utiliza a barra de rolagem */
+.fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    background-color: tomato;
+}
+
+/* Ele leva em consideração o elemento anterior e aplica o position a partir dele. */
+.relative1 {
+    position: relative;
+    left: 50px;
+    top: 5px;
+    background-color: seagreen;
+}
+
+/* Como ele está dentro do body, ele leva em consideração o body e passa por cima de outros elementos ao se posicionar. */
+.absolute1{
+    position: absolute;
+    left: 350px;
+    top: 120px;
+    background-color: violet;
+    color: #fff;
+}
+
+.relative2{
+    position: relative;
+    left: 250px;
+    top: 2000px;
+    width: 200px;
+    height: 200px;
+    background-color: slategrey;
+}
+
+/* absolute2 está dentro de relative2 e como o relative2 está com position definida, o absolute2 leva em consideração o relative2 e se orienta através dele seu posicionamento. */
+.absolute2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+}
+
+/* Ao rolar a página para cima, ao chegar ao topo, esse elemento será fixado no topo da página. */
+.sticky{
+    position: --webkit-sticky; /* para funcionar no Safari */
+    position: sticky;
+    top: 5px;
+    background-color: chartreuse;
+}

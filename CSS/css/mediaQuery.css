@@ -1,0 +1,25 @@
+div {
+    font-size: 40px;
+    margin: 20px;
+    padding: 20px;
+    background-color: coral;
+    border: solid 5px;
+    display: none;
+}
+
+/* Uma das formas de responsividade é a media query: */
+
+/* width tem que ser <= 600px */
+@media (max-width: 600px){
+    .muito-pequeno{display: block;}
+}
+
+/* width tem que ser <= 1000px OU a orientação tem que estar no modo retrato */
+@media (max-width: 1000px), (orientation: portrait){
+    .pequeno-retrato{display: block;}
+}
+
+/* width tem que ser >= 500px e <= 1000px */
+@media (min-width: 500px) and (max-width: 1000px){
+    .intervalo{ display: block;}
+}

@@ -9,6 +9,7 @@
     <style>
         /* ... */
     </style>
+    <link rel="stylesheet" href="css/desafioMenu.css">
 </head>
 
 <body>
@@ -43,8 +44,23 @@
         </aside>
     </header>
 
+    <!--
+        *Script para ao selecionar um dos menus, e o link fique selecionado*
+
+        O link verifica se houve uma mudança de hase e em seguida aplica a função, onde, a URL antiga é coletada e separada através do divisor '#' que foi definido na classe, e pega a posição 1, ou seja, tudo o que foi a direita do #.
+        O mesmo acontece com a nova URL. 
+        Em seguida, 2 links são armazenados em constantes conforme o clique do usuário, esse link será utilizado para definir a nova classe que será criada no HTML.
+        Por fim, esses 2 links adicionam e remove a classe "selected" no HTML para que possa ser possível utilizar o .selected no CSS.
+    -->
     <script>
-        // ...
+        window.onhashchange = function(e){
+            const oldURL = e.oldURL.split("#")[1]
+            const newURL = e.newURL.split("#")[1]
+            const oldLink = document.querySelector(`.menu [href='#${oldURL}`)
+            const newLink = document.querySelector(`.menu [href='#${newURL}`)
+            oldLink && oldLink.classList.remove("selected")
+            newLink && newLink.classList.add("selected")
+        }
     </script>
 </body>
 
