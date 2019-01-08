@@ -1,0 +1,19 @@
+/* Solução do desafio utilizando Flexbox */
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    flex-grow: 10;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    margin: 0px 10px;
+}

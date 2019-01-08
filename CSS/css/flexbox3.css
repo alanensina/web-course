@@ -1,0 +1,19 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container div{
+    flex-basis: 100px; /* Prevalece sobre o width */
+    width: 200px;
+}
+
+.flex-container div:nth-last-child(4){
+    /* grow shrink basis */
+    flex: 3 6 100px;
+}
+
+.flex-container{
+    width: 300px;
+    width: 600px;
+}
